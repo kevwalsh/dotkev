@@ -1,0 +1,19 @@
+.DS_Store
+settings.php
+.buildpath
+.project
+.settings
+.idea
+*~
+\#*\#
+.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+# flymake-mode
+*_flymake.*

@@ -1,0 +1,37 @@
+[user]
+	name = "Kevin Walsh"
+	email = kevinjosephwalsh@gmail.com
+[core]
+	autocrlf = false
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 1064x727+1689+178
+	history-view-vpane-position = 346
+	main-window-view = HistoryView
+	file-view-vpane-position = 466
+	file-view-hpane-position = 242
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	graphlog = log --oneline --graph --branches
+        g = grep -n --color
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=3600
+[diff]
+	tool = meld
+[difftool]
+	prompt = false
+[branch]
+        autosetuprebase = always
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
+        rebase = true

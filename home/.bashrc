@@ -13,3 +13,21 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php5.2/bin:$PATH"
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# homeshick & dotkev support
+alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
+
+# For this to work, first create a symlink, for example:
+# ln -s ~/.homesick/repos/dotfen/bash_inc ~/.bash_inc
+for incl in ~/.bash_inc/*.bash ~/.bash_inc/*.sh
+  do . $incl
+done
