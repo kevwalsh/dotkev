@@ -27,7 +27,7 @@ fi
 alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
 
 # For this to work, first create a symlink, for example:
-# ln -s ~/.homesick/repos/dotfen/bash_inc ~/.bash_inc
+# ln -s ~/.homesick/repos/dotkev/bash_inc ~/.bash_inc
 for incl in ~/.bash_inc/*.bash ~/.bash_inc/*.sh
   do . $incl
 done
