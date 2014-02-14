@@ -10,7 +10,7 @@ alias mv='mv -i'
 alias yes='echo "yes! yes! yes!"'
 
 # dir listing and changing
-alias ls='ls --color=auto'
+#alias ls='ls --color=auto'
 alias l='ls -alh'
 alias la='ls -A'
 alias ll='ls -alF'
@@ -23,21 +23,21 @@ alias dl='cd ~/Downloads'
 alias wl='cd ~/workspace; ls'
 
 # Directory stack aliases.
-alias pd=pushd
-alias po=popd
-alias d='dirs -v'
-alias 1='pd +1'
-alias 2='pd +2'
-alias 3='pd +3'
-alias 4='pd +4'
-alias 5='pd +5'
-alias 6='pd +6'
-alias 7='pd +7'
-alias 8='pd +8'
-alias 9='pd +9'
+#alias pd=pushd
+#alias po=popd
+#alias d='dirs -v'
+#alias 1='pd +1'
+#alias 2='pd +2'
+#alias 3='pd +3'
+#alias 4='pd +4'
+#alias 5='pd +5'
+#alias 6='pd +6'
+#alias 7='pd +7'
+#alias 8='pd +8'
+#alias 9='pd +9'
 
 # Shortcuts
-alias c=clear
+#alias c=clear
 alias h='history'
 alias h10='history 10'
 alias j='jobs -l'

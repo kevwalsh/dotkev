@@ -4,6 +4,7 @@
 #source "$HOME/.homeshick/repos/dotfen/bash_inc/prompt.bash"
 #source "$HOME/.homeshick/repos/dotfen/bash_inc/colors.theme.bash"
 #source "$HOME/.homeshick/repos/dotfen/bash_inc/drush.complete.sh"
+PATH=/Users/kev/bin:$PATH
 export PATH
 export CLICOLOR=1
 export LSCOLORS=dxFxCxDxBxegedabagacad
@@ -13,6 +14,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php5.2/bin:$PATH"
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+export DRUSH_PHP=/Applications/MAMP/bin/php/php5.2.17/bin/php
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -31,3 +33,13 @@ alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
 for incl in ~/.bash_inc/*.bash ~/.bash_inc/*.sh
   do . $incl
 done
+
+##
+# DELUXE-USR-LOCAL-BIN-INSERT
+# (do not remove this comment)
+##
+echo $PATH | grep -q -s "/usr/local/bin"
+if [ $? -eq 1 ] ; then
+    PATH=$PATH:/usr/local/bin
+    export PATH
+fi

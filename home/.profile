@@ -16,6 +16,11 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ]; then
+  PATH="$HOME/bin:$PATH"
+fi
+
 # Add RVM to PATH for ruby scripting
 # if [ -d $HOME/.rvm/bin ]; then
 #     PATH=$PATH:$HOME/.rvm/bin
