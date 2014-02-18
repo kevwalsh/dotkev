@@ -1,5 +1,7 @@
-.DS_Store
-settings.php
+# Run this first: 
+# git config --global core.excludesfile ~/.gitignore_global
+######################################################
+
 .buildpath
 .project
 .settings
@@ -11,10 +13,21 @@ auto-save-list
 tramp
 .\#*
 
-# Org-mode
-.org-id-locations
-*_archive
 
-# flymake-mode
-*_flymake.*
+# Drupal #
+##########
+settings.php
+
+
+
+
+# OS X #
+########
 .DS_Store
+
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
