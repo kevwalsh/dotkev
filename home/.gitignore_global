@@ -17,3 +17,4 @@ tramp
 
 # flymake-mode
 *_flymake.*
+.DS_Store
