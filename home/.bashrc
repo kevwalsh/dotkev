@@ -14,7 +14,8 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php5.2/bin:$PATH"
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
-export DRUSH_PHP=/Applications/MAMP/bin/php/php5.2.17/bin/php
+#export DRUSH_PHP=/Applications/MAMP/bin/php/php5.2.17/bin/php
+export DRUSH_PHP=/Applications/MAMP/bin/php/php5.4.10/bin/php
 export PATH="$HOME/.drush:$PATH"
 
 
