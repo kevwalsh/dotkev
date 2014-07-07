@@ -17,6 +17,7 @@ source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
 #export DRUSH_PHP=/Applications/MAMP/bin/php/php5.2.17/bin/php
 export  /bin/php
+#export DRUSH_PHP=/Applications/MAMP/bin/php/php5.4.10/bin/php
 export PATH="$HOME/.drush:$PATH"
 
 
