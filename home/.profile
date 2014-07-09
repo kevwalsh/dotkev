@@ -30,4 +30,4 @@ fi
 
 # export PATH
 
-export DRUSH_PHP='/Applications/MAMP/bin/php/php5.2.17/bin/php'
+# export DRUSH_PHP='/Applications/MAMP/bin/php/php5.2.17/bin/php'
