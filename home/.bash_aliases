@@ -45,6 +45,7 @@ alias less='less -R'
 alias m=less
 alias psg='/bin/ps auxww | grep'
 alias purge='/bin/rm -f \#*\# *~ .*~ *% .*% core'
+alias msockfix='rm /Applications/MAMP/tmp/mysql/mysql.sock; sudo ln -s /Applications/MAMP/tmp/mysql/mysql.sock /tmp/mysql.sock'
 
 # git
 alias av='git branch -av'

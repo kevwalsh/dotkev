@@ -12,7 +12,8 @@
 auto-save-list
 tramp
 .\#*
-
+**/.sass-cache
+**/.sass-cache/*
 
 # Drupal #
 ##########
