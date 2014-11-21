@@ -19,7 +19,7 @@ source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
 export  /bin/php
 #export DRUSH_PHP=/Applications/MAMP/bin/php/php5.4.10/bin/php
 export PATH="$HOME/.drush:$PATH"
-
+export EDITOR="/usr/local/bin/mate -w"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
