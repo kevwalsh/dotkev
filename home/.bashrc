@@ -1,25 +1,14 @@
-# alias fixmamp='sudo ln -s /Applications/MAMP/tmp/mysql/mysql.sock /tmp/mysql.sock'
-# PATH=/Users/kevinjosephwalsh/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php5/bin:$PATH
-#source "$HOME/.homeshick/repos/dotfen/bash_inc/base.theme.bash"
-#source "$HOME/.homeshick/repos/dotfen/bash_inc/prompt.bash"
-#source "$HOME/.homeshick/repos/dotfen/bash_inc/colors.theme.bash"
-#source "$HOME/.homeshick/repos/dotfen/bash_inc/drush.complete.sh"
 PATH=/Users/kev/bin:$PATH
 export PATH
+export PATH="/Applications/MAMP/Library/bin:$PATH"
+export PATH="$HOME/.drush:$PATH"
 export CLICOLOR=1
 export LSCOLORS=dxFxCxDxBxegedabagacad
-set bell-style none
 export PS1="\w $ "
-#export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
-export PATH="/Applications/MAMP/Library/bin:$PATH"
-#export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php5.2/bin:$PATH"
+export EDITOR="/usr/local/bin/mate -w"
+set bell-style none
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
-#export DRUSH_PHP=/Applications/MAMP/bin/php/php5.2.17/bin/php
-export  /bin/php
-#export DRUSH_PHP=/Applications/MAMP/bin/php/php5.4.10/bin/php
-export PATH="$HOME/.drush:$PATH"
-export EDITOR="/usr/local/bin/mate -w"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
