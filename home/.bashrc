@@ -1,7 +1,9 @@
 PATH=/Users/kev/bin:$PATH
 export PATH
 export PATH="/Applications/MAMP/Library/bin:$PATH"
-export PATH="$HOME/.drush:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php5.3.29/bin:$PATH"
+# export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php5.5.18/bin:$PATH"
 export CLICOLOR=1
 export LSCOLORS=dxFxCxDxBxegedabagacad
 export PS1="\w $ "
@@ -18,6 +20,7 @@ source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
 
 # homeshick & dotkev support
 alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
@@ -37,3 +40,9 @@ if [ $? -eq 1 ] ; then
     PATH=$PATH:/usr/local/bin
     export PATH
 fi
+
+# Docker (default for Vagrant based boxes)
+#export DOCKER_HOST=tcp://localhost:2375
+
+$(boot2docker shellinit 2> /dev/null)
+

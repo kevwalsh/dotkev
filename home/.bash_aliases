@@ -3,6 +3,8 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
 alias dr='drush'
+alias pt='terminus'
+alias ptd='terminus drush'
 
 # safety
 alias cp='cp -i'
@@ -54,4 +56,4 @@ alias rv='git remote -v'
 alias staged='git diff --staged'
 
 #projects
-alias lexup='dr sql-sync @ca.lex @self -y; dr rsync @ca.lex:%files @self:%files -y'
+alias lexup='dr sql-sync @ca.lex @self -y; dr rsync @ca.lex:%files @self:%files'

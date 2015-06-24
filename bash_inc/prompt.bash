@@ -12,14 +12,14 @@ function prompt() {
   local prompt_char='» '
   #  [[ $(grep `pwd` ~/.drush/*aliases.drushrc.php) ]] && prompt_char='∞ '
 
-  case $TERM in
-    xterm*)
-      TITLEBAR='\[\033]0;[\u@\h] \w\007\]'
-      ;;
-    *)
-      TITLEBAR=''
-      ;;
-  esac
+  #case $TERM in
+  #  xterm*)
+  #    TITLEBAR='\[\033]0;[\u@\h] \w\007\]'
+  #    ;;
+  #  *)
+  #    TITLEBAR=''
+  #    ;;
+  #esac
 
   if [ "$UID" = "0" ]; then
     local user_color=$bold_red
