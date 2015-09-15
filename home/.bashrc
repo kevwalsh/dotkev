@@ -11,6 +11,7 @@ export EDITOR="/usr/local/bin/mate -w"
 set bell-style none
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+source "$HOME/.homesick/repos/dotkev/home/.terminus/terminus-completion.bash"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
