@@ -43,7 +43,7 @@ if [ $? -eq 1 ] ; then
 fi
 
 # Docker (default for Vagrant based boxes)
-#export DOCKER_HOST=tcp://localhost:2375
+export DOCKER_HOST=tcp://localhost:2375
 
-$(boot2docker shellinit 2> /dev/null)
 
+export PATH="$PATH:/Applications/DevDesktop/drush"

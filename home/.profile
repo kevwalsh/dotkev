@@ -33,3 +33,5 @@ fi
 # export DRUSH_PHP='/Applications/MAMP/bin/php/php5.2.17/bin/php'
 
 
+
+export PATH="$PATH:/Applications/DevDesktop/drush"
