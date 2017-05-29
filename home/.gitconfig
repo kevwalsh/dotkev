@@ -23,6 +23,7 @@
 	st = status
 	graphlog = log --oneline --graph --branches
         g = grep -n --color
+	log = log --pretty=oneline
 [push]
 	default = simple
 [credential]

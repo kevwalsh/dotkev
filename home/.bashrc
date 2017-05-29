@@ -1,9 +1,11 @@
 PATH=/Users/kev/bin:$PATH
+export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 export PATH
+export PATH="$PATH:$HOME/.composer/vendor/bin"
 export PATH="/Applications/MAMP/Library/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php5.3.29/bin:$PATH"
-# export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php5.5.18/bin:$PATH"
+#export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php5.3.29/bin:$PATH"
+export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php5.5.18/bin:$PATH"
 export CLICOLOR=1
 export LSCOLORS=dxFxCxDxBxegedabagacad
 export PS1="\w $ "
@@ -11,7 +13,6 @@ export EDITOR="/usr/local/bin/mate -w"
 set bell-style none
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
-source "$HOME/.homesick/repos/dotkev/home/.terminus/terminus-completion.bash"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -43,7 +44,9 @@ if [ $? -eq 1 ] ; then
 fi
 
 # Docker (default for Vagrant based boxes)
-export DOCKER_HOST=tcp://localhost:2375
+# export DOCKER_HOST=tcp://localhost:2375
+
+# Terminus
+alias terminus=$HOME/terminus1x/vendor/bin/terminus
 
 
-export PATH="$PATH:/Applications/DevDesktop/drush"
