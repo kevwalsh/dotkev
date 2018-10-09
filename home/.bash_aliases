@@ -55,5 +55,6 @@ alias suno='git status -s -uno'
 alias rv='git remote -v'
 alias staged='git diff --staged'
 
-#projects
-alias lexup='dr sql-sync @ca.lex @self -y; dr rsync @ca.lex:%files @self:%files'
+# Keyboard config
+alias xxa='xmodmap .Xmodmap-apple-bluetooth'
+alias xxl='xmodmap .Xmodmap-lenovo-keyboard '
