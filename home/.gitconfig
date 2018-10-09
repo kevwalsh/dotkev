@@ -4,7 +4,7 @@
 [core]
 	autocrlf = false
 	excludesfile = ~/.gitignore_global
-	editor = atom
+	editor = nano -r 72
 [color]
 	branch = auto
 	diff = auto
@@ -39,11 +39,16 @@
         rebase = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
+[log]
+	date = relative
+[format]
+	pretty = format:%h %Cblue%ad%Creset %ae %Cgreen%s%Creset
