@@ -70,6 +70,10 @@ alias glrn='git log --pretty=format:"* %s" --no-merges'
 alias gst='git stash'
 alias gsp='git stash pop'
 
+# Keyboard config on ubuntu
+alias xxa='xmodmap .Xmodmap-apple-bluetooth'
+alias xxl='xmodmap .Xmodmap-lenovo-keyboard '
+
 #projects
 
 alias dump='drush sql-dump --gzip --result-file=$HOME/Desktop/db_$(date +"%Y-%m-%d").sql'
