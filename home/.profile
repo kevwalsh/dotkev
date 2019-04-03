@@ -11,3 +11,5 @@
 
 
 export HOMEBREW_NO_ANALYTICS=1
+
+export PATH="$PATH:/Applications/DevDesktop/tools"

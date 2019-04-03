@@ -4,8 +4,15 @@ export PATH
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 export PATH="/Applications/MAMP/Library/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/local/opt/libressl/bin:$PATH"
+
+# Automatically added by the Platform.sh CLI installer
+# export PATH="/Users/kev/.platformsh/bin:$PATH"
+# . '/Users/kev/.platformsh/shell-config.rc' 2>/dev/null || true
+
 #export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php5.3.29/bin:$PATH"
-export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php5.5.18/bin:$PATH"
+# export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php7.1.8/bin:$PATH"
 export CLICOLOR=1
 export LSCOLORS=dxFxCxDxBxegedabagacad
 export PS1="\w $ "
@@ -46,7 +53,15 @@ fi
 # Docker (default for Vagrant based boxes)
 # export DOCKER_HOST=tcp://localhost:2375
 
-# Terminus
-alias terminus=$HOME/terminus1x/vendor/bin/terminus
 
+# https://github.com/magicmonty/bash-git-prompt
+# This should only apply on OS X with homebrew `brew install bash-git-prompt`.
 
+if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+  __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
+  source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
+fi
+
+ssh-add -A 2>/dev/null;
+
+export PATH="$PATH:/Applications/DevDesktop/tools"

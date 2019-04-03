@@ -25,3 +25,22 @@ fi
 # export PATH
 
 # export DRUSH_PHP='/Applications/MAMP/bin/php/php5.2.17/bin/php'
+
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/local/opt/libressl/bin:$PATH"
+
+function blt() {
+  if [ "`git rev-parse --show-cdup 2> /dev/null`" != "" ]; then
+    GIT_ROOT=$(git rev-parse --show-cdup)
+  else
+    GIT_ROOT="."
+  fi
+
+  if [ -f "$GIT_ROOT/vendor/bin/blt" ]; then
+    $GIT_ROOT/vendor/bin/blt "$@"
+  else
+    echo "You must run this command from within a BLT-generated project repository."
+    return 1
+  fi
+}
+export PATH="$PATH:/Applications/DevDesktop/tools"
