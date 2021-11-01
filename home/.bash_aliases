@@ -29,19 +29,6 @@ alias ....="cd ../../.."
 alias dl='cd ~/Downloads'
 alias wl='cd ~/workspace; ls'
 
-# Directory stack aliases.
-#alias pd=pushd
-#alias po=popd
-#alias d='dirs -v'
-#alias 1='pd +1'
-#alias 2='pd +2'
-#alias 3='pd +3'
-#alias 4='pd +4'
-#alias 5='pd +5'
-#alias 6='pd +6'
-#alias 7='pd +7'
-#alias 8='pd +8'
-#alias 9='pd +9'
 
 # Shortcuts
 #alias c=clear
@@ -63,12 +50,14 @@ alias staged='git diff --staged'
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
+alias gco='git checkout'
 alias gd='git diff'
-alias gr='git rebase -i'
+alias gr='git remote update && git rebase upstream/develop -i'
 alias gl='git log --pretty=format:'\''%h %ar <%aN> %s'\'' --graph -10'
 alias glrn='git log --pretty=format:"* %s" --no-merges'
 alias gst='git stash'
 alias gsp='git stash pop'
+alias gitrecent='git for-each-ref --sort=-committerdate refs/heads/ --count=10'
 
 # Keyboard config on ubuntu
 alias xxa='xmodmap .Xmodmap-apple-bluetooth'

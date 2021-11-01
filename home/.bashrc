@@ -6,6 +6,7 @@ export PATH="/Applications/MAMP/Library/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/libressl/bin:$PATH"
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Automatically added by the Platform.sh CLI installer
 # export PATH="/Users/kev/.platformsh/bin:$PATH"
@@ -16,7 +17,7 @@ export PATH="/usr/local/opt/libressl/bin:$PATH"
 export CLICOLOR=1
 export LSCOLORS=dxFxCxDxBxegedabagacad
 export PS1="\w $ "
-export EDITOR="/usr/local/bin/mate -w"
+export EDITOR="/usr/local/bin/atom -w"
 set bell-style none
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
